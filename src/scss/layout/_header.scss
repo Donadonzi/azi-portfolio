@@ -1,5 +1,6 @@
 .header {
 	box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+	// border-bottom: 1px solid $color-grey-4;
 	background-color: white;
 	position: sticky;
 	top: 0;
@@ -7,7 +8,7 @@
 	height: 100%;
 	width: 100%;
 	font-weight: bold;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	grid-row: 1 / 2;
 	grid-column: 1 / -1;
 	display: grid;
@@ -15,6 +16,17 @@
 	grid-column-gap: 2rem;
 	align-items: center;
 	z-index: 10;
+
+	@media only screen and (max-width: 1023px) {
+		grid-template-columns: 5rem repeat(12, 1fr) 5rem;
+		grid-column-gap: 2rem;
+	}
+
+	@media only screen and (max-width: 767px) {
+		grid-template-columns: 1rem repeat(6, 1fr) 1rem;
+		grid-column-gap: 1rem;
+		font-size: 1.2rem;
+	}
 
 	&__logo {
 		height: 40px;
@@ -29,14 +41,20 @@
 	}
 
 	&__menu {
-		grid-column: 11 / 13;
+		grid-column: 12 / 14;
 		display: flex;
 		justify-content: space-between;
+
+		@media only screen and (max-width: 767px) {
+			grid-column: 7 / 8;
+		}
+		
 
 		&__link {
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
+
 
 		}
 		&__link:visited {

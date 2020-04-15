@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"compile": "node-sass src/scss/main.scss src/css/style.css -w"
-		
+    "compile": "node-sass src/scss/main.scss src/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
   }
 }

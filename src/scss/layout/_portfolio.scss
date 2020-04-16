@@ -1,25 +1,37 @@
 .portfolio {
-	// height: 70vh;
+	// height: 80vh;
 	width: 100%;
 	margin-bottom: 15rem;
 	grid-column: 2 / 14;
 	grid-row: 3 / 4;
 	display: grid;
-	// grid-template-columns: repeat(12, 1fr);
 	grid-gap: 2rem;
-	// grid-template-rows: repeat(2, 1fr);
-	overflow: hidden;
+	// overflow: hidden;
+	grid-template-columns: repeat(2, calc(100% / 2));
+	grid-template-rows: repeat(3, calc(100% / 3));
+	height: 80rem;
 
-	// @media only screen and (max-width: 1023px) {
-		grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		height: 130rem;
-	// }
+	@media only screen and (max-width: 2560px) {
+		height: 150rem;
+		grid-gap: 5rem;
+	}
 
-	@media only screen and (max-width: 767px) {
-		// grid-template-columns: repeat(6, 1fr);
-		// grid-template-rows: repeat(6, 1fr);
-		// grid-column: 2 / 8;
+	@media only screen and (max-width: 2100px) {
+		height: 120rem;
+	}
+	@media only screen and (max-width: 1800px) {
+		height: 100rem;
+		grid-gap: 4rem;
+	}
+
+	@media only screen and (max-width: 1440px) {
+		height: 80rem;
+		grid-gap: 2rem;
+	}
+
+	
+
+	@media only screen and (max-width: 768px) {
 		height: 252rem;
 		display: flex;
 		flex-direction: column;
@@ -29,8 +41,6 @@
 	}
 
 	&__proj {
-		width: 100%;
-		height: 100%;
 		border: 1px solid $color-grey-3;
 		border-radius: 3px;
 		overflow: hidden;
@@ -38,8 +48,9 @@
 		cursor: pointer;
 		transition: all .5s;
 
-		@media only screen and (max-width: 767px) {
-			height: 40rem;
+		@media only screen and (max-width: 768px) {
+			height: 100%;
+			width: 100%;
 			margin: 2rem;
 		}
 
@@ -108,89 +119,39 @@
 	background-image: url('../img/meca.png');
 }
 #project1 {
-	grid-column: 1 / 5;
+	grid-column: 1 /2;
 	grid-row: 1 / 2;
-
-	@media only screen and (max-width: 1023px) {
-
-	}
-	// @media only screen and (max-width: 767px) {
-	// 	grid-column: 1 / -1;
-	// }
 }
 
 #project2 {
 	background-color: $color-grey-4;
-	grid-column: 5 / 9;
+	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-
-	@media only screen and (max-width: 1023px) {
-		
-	}
-	// @media only screen and (max-width: 767px) {
-	// 	grid-column: 1 / -1;
-	// 	grid-row: 2 / 3;
-	// }
 }
 
 #project3 {
 	background-color: $color-grey-4;
-	grid-column: 9 / 13;
-	grid-row: 1 / 2;
-
-	// @media only screen and (max-width: 1023px) {
-		grid-column: 1 / 5;
-	  grid-row: 2 / 3;
-	// }
-	// @media only screen and (max-width: 767px) {
-	// 	grid-column: 1 / -1;
-	// 	grid-row: 3 / 4;
-	// }
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
 }
 
 #project4 {
 	background-color: $color-grey-4;
-	grid-column: 1 / 5;
+	grid-column: 2 / 3;
 	grid-row: 2 / 3;
-
-	// @media only screen and (max-width: 1023px) {
-		grid-column: 5 / 9;
-	  
-	// }
-	// @media only screen and (max-width: 767px) {
-	// 	grid-column: 1 / -1;
-	// 	grid-row: 4 / 5;
-	// }
+	
 }
 
 #project5 {
 	background-color: $color-grey-4;
-	grid-column: 5 / 9;
-	grid-row: 2 / 3;
-
-	// @media only screen and (max-width: 1023px) {
-		grid-column: 1 / 5;
-		grid-row: 3 / 4;
-	// }
-	// @media only screen and (max-width: 767px) {
-	// 	grid-column: 1 / -1;
-	// 	grid-row: 5 / 6;
-	// }
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
 }
 
 #project6 {
 	background-color: $color-grey-4;
-	grid-column: 9 / 13;
-	grid-row: 2 / 3;
-
-	// @media only screen and (max-width: 1023px) {
-		grid-column: 5 / 9;
-		grid-row: 3 / 4;
-	// }
-	// @media only screen and (max-width: 767px) {
-	// 	grid-column: 1 / -1;
-	// 	grid-row: 6 / 7;
-	// }
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
 }
 
 

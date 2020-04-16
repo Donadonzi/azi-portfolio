@@ -8,12 +8,12 @@
 	grid-template-columns: 20rem repeat(12, 1fr) 20rem;
 	align-items: center;
 
-	@media only screen and (max-width: 1023px) {
+	@media only screen and (max-width: 1024px) {
 		grid-template-columns: 5rem repeat(12, 1fr) 5rem;
 		grid-column-gap: 2rem;
 	}
 
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 768px) {
 		grid-template-columns: 5rem repeat(6, 1fr) 5rem;
 		grid-column-gap: 1rem;
 		grid-column: 1 / -1;
@@ -37,9 +37,12 @@
 		display: flex;
 		justify-content: space-between;
 
-		@media only screen and (max-width: 767px) {
-			grid-column: 6 / 8;
+		@media only screen and (max-width: 1024px) {
 			margin-right: 0;
+		}
+		@media only screen and (max-width: 768px) {
+			grid-column: 6 / 8;
+		
 		}
 
 		&__icon {

@@ -48,11 +48,11 @@
 		margin-top: $s-desktop;
 		white-space: nowrap;
 
-		@media only screen and (max-width: 1023px) {
+		@media only screen and (max-width: 1024px) {
 			font-size: 3rem;
 		}
 	
-		@media only screen and (max-width: 767px) {
+		@media only screen and (max-width: 768px) {
 			font-size: 2rem;
 			white-space: unset;
 		}

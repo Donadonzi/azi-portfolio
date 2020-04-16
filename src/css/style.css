@@ -34,9 +34,9 @@ html {
 
 .about {
   color: #070707;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 2.5rem;
-  height: 80rem;
+  height: 100rem;
   width: 100%;
   grid-column: 3 / 13;
   grid-row: 3 / 4;
@@ -45,20 +45,10 @@ html {
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 10rem; }
-  @media only screen and (max-width: 2560px) {
-    .about {
-      height: 150rem;
-      font-size: 3rem;
-      line-height: 5rem; } }
-  @media only screen and (max-width: 1900px) {
-    .about {
-      height: 100rem;
-      font-size: 2.5rem;
-      line-height: 3rem; } }
   @media only screen and (max-width: 1500px) {
     .about {
       height: 80rem;
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       line-height: 2.5rem; } }
   @media only screen and (max-width: 1200px) {
     .about {
@@ -103,7 +93,8 @@ html {
   .about__description {
     width: 100%;
     grid-column: 6 / -1;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    align-self: center; }
   .about__details {
     margin-top: 8rem;
     width: 100%;

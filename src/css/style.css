@@ -208,7 +208,9 @@ html {
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    transition: all .5s; }
+    transition: all .5s;
+    background-repeat: no-repeat;
+    background-size: contain; }
     @media only screen and (max-width: 768px) {
       .portfolio__proj {
         height: 100%;

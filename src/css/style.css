@@ -183,11 +183,17 @@ html {
     @media only screen and (max-width: 500px) {
       .footer__social {
         grid-column: 5 / 8; } }
+    @media only screen and (max-width: 400px) {
+      .footer__social {
+        grid-column: 4 / 8; } }
     .footer__social__icon {
       display: block;
       width: 4rem;
       height: 4rem;
       color: #787878; }
+      @media only screen and (max-width: 400px) {
+        .footer__social__icon {
+          transform: scale(0.7); } }
     .footer__social__link {
       color: #787878; }
 

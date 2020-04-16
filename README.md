@@ -1,2 +1,2 @@
 # azi-portfolio
-A portfolio for Azar
+A website for Azar

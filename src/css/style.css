@@ -41,7 +41,7 @@ html {
   display: grid;
   grid-template-columns: 20rem repeat(12, 1fr) 20rem;
   align-items: center; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1200px) {
     .footer {
       grid-template-columns: 5rem repeat(12, 1fr) 5rem;
       grid-column-gap: 2rem; } }
@@ -60,12 +60,12 @@ html {
       font-style: normal; }
   .footer__social {
     grid-column: 12 / span 2;
-    margin-right: 2rem;
     display: flex;
     justify-content: space-between; }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
       .footer__social {
-        margin-right: 0; } }
+        margin-right: 2rem;
+        grid-column: 11 / span 3; } }
     @media only screen and (max-width: 768px) {
       .footer__social {
         grid-column: 6 / 8; } }
@@ -120,6 +120,7 @@ html {
       .header__menu {
         grid-column: 7 / 8; } }
     .header__menu__link {
+      color: #070707;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block; }
@@ -253,7 +254,7 @@ html {
   filter: opacity(0.15); }
 
 #proj-1__img {
-  background-image: url("../img/meca.png"); }
+  background-image: url("../img/cativa-main-web.svg"); }
 
 #project1 {
   grid-column: 1 /2;

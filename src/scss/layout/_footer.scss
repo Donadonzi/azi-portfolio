@@ -8,7 +8,7 @@
 	grid-template-columns: 20rem repeat(12, 1fr) 20rem;
 	align-items: center;
 
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 1200px) {
 		grid-template-columns: 5rem repeat(12, 1fr) 5rem;
 		grid-column-gap: 2rem;
 	}
@@ -33,13 +33,16 @@
 
 	&__social {
 		grid-column: 12 / span 2;
-		margin-right: 2rem;
+		// margin-right: 2rem;
 		display: flex;
 		justify-content: space-between;
 
-		@media only screen and (max-width: 1024px) {
-			margin-right: 0;
+		@media only screen and (max-width: 1200px) {
+			margin-right: 2rem;
+			grid-column: 11 / span 3;
 		}
+
+
 		@media only screen and (max-width: 768px) {
 			grid-column: 6 / 8;
 		

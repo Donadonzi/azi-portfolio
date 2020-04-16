@@ -7,6 +7,9 @@
 	display: grid;
 	grid-template-columns: 20rem repeat(12, 1fr) 20rem;
 	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 
 	@media only screen and (max-width: 1200px) {
 		grid-template-columns: 5rem repeat(12, 1fr) 5rem;
@@ -28,6 +31,10 @@
 			color: #181818;
 			font-size: 2rem;
 			font-style: normal;
+
+			@media only screen and (max-width: 768px) {
+				font-size: 1.4rem;
+			}
 		}
 	}
 
@@ -46,6 +53,10 @@
 		@media only screen and (max-width: 768px) {
 			grid-column: 6 / 8;
 		
+		}
+
+		@media only screen and (max-width: 500px) {
+			grid-column: 5 / 8;
 		}
 
 		&__icon {

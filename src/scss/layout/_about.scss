@@ -1,5 +1,7 @@
 .about {
 	color: $color-black;
+	font-size: 1.9rem;
+	line-height: 2.5rem;
 	height: 80rem;
 	width: 100%;
 	grid-column: 3 / 13;
@@ -8,9 +10,48 @@
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap: 2rem;
+	margin-bottom: 10rem;
+
+	@media only screen and (max-width: 2560px) {
+		height: 150rem;
+		font-size: 3rem;
+		line-height: 5rem;
+	}
+
+	@media only screen and (max-width: 1900px) {
+		height: 100rem;
+		font-size: 2.5rem;
+	  line-height: 3rem;
+	}
+
+	@media only screen and (max-width: 1500px) {
+		height: 80rem;
+		font-size: 1.9rem;
+	  line-height: 2.5rem;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		height: 70rem;
+		font-size: 1.6rem;
+	  line-height: 2rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		font-size: 1.4rem;
+	  line-height: 1.8rem;
+		height: 120rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media only screen and (max-width: 500px) {
+		align-items: center;
+	}
+
 
 	& h4 {
 		color: $color-pink-1;
+		margin-bottom: 2rem;
 	}
 
 	&__image {
@@ -20,32 +61,47 @@
 		background-size: cover;
 		background-position: center center;
 		width: 90%;
-		
 		overflow: hidden;
 		grid-column: 1 / 6;
 		grid-row: 1 / 2;
 		background-clip:padding-box;
+
+		@media only screen and (max-width: 768px) {
+			width: 40rem;
+			height: 40rem;
+			align-self: center;
+			margin-bottom: 8rem;
+			flex-shrink: 0;
+		}
+
+		@media only screen and (max-width: 500px) {
+			width: 30rem;
+			height: 30rem;
+		}	
 				
 	}
 
 	&__description {
 		width:100%;
-		height: 100%;
-		font-size: 1.9rem;
-		line-height: 2.5rem;
+		// height: 100%;
 		grid-column: 6 / -1;
 		grid-row: 1 / 2;
 	}
 
 	&__details {
-		margin-top: 4rem;
-		font-size: 1.5rem;
+		margin-top: 8rem;
+		// font-size: 1.5rem;
 		width: 100%;
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: 25% 50%;
+		gap: 5rem;
+
+		@media only screen and (max-width: 400px) {
+			gap: 2rem;
+		}
 
 		&__tools {
 			grid-column: 1 / -1;
@@ -61,7 +117,11 @@
 			grid-column: 2 / 3;
 			grid-row: 2 / 3;
 			align-self: flex-start;
-			margin-top: 2rem;
+			margin-top: 4rem;
+
+			@media only screen and (max-width: 400px) {
+				margin-top: 8rem;
+			}
 		}
 
 		&__research {
@@ -69,12 +129,9 @@
 			grid-row: 2 / 3;
 		}
 	}
-
-
-
 }
 
 .p3 {
 	color: $color-grey-2;
-	font-size: 1.8rem;
+	
 }

@@ -34,6 +34,8 @@ html {
 
 .about {
   color: #070707;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
   height: 80rem;
   width: 100%;
   grid-column: 3 / 13;
@@ -41,9 +43,41 @@ html {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem; }
+  gap: 2rem;
+  margin-bottom: 10rem; }
+  @media only screen and (max-width: 2560px) {
+    .about {
+      height: 150rem;
+      font-size: 3rem;
+      line-height: 5rem; } }
+  @media only screen and (max-width: 1900px) {
+    .about {
+      height: 100rem;
+      font-size: 2.5rem;
+      line-height: 3rem; } }
+  @media only screen and (max-width: 1500px) {
+    .about {
+      height: 80rem;
+      font-size: 1.9rem;
+      line-height: 2.5rem; } }
+  @media only screen and (max-width: 1200px) {
+    .about {
+      height: 70rem;
+      font-size: 1.6rem;
+      line-height: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .about {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      height: 120rem;
+      display: flex;
+      flex-direction: column; } }
+  @media only screen and (max-width: 500px) {
+    .about {
+      align-items: center; } }
   .about h4 {
-    color: #ff207E; }
+    color: #ff207E;
+    margin-bottom: 2rem; }
   .about__image {
     border-radius: 20px;
     background-image: url("../img/Me.jpg");
@@ -55,22 +89,33 @@ html {
     grid-column: 1 / 6;
     grid-row: 1 / 2;
     background-clip: padding-box; }
+    @media only screen and (max-width: 768px) {
+      .about__image {
+        width: 40rem;
+        height: 40rem;
+        align-self: center;
+        margin-bottom: 8rem;
+        flex-shrink: 0; } }
+    @media only screen and (max-width: 500px) {
+      .about__image {
+        width: 30rem;
+        height: 30rem; } }
   .about__description {
     width: 100%;
-    height: 100%;
-    font-size: 1.9rem;
-    line-height: 2.5rem;
     grid-column: 6 / -1;
     grid-row: 1 / 2; }
   .about__details {
-    margin-top: 4rem;
-    font-size: 1.5rem;
+    margin-top: 8rem;
     width: 100%;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25% 50%; }
+    grid-template-rows: 25% 50%;
+    gap: 5rem; }
+    @media only screen and (max-width: 400px) {
+      .about__details {
+        gap: 2rem; } }
     .about__details__tools {
       grid-column: 1 / -1;
       grid-row: 1 / 2; }
@@ -81,14 +126,16 @@ html {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       align-self: flex-start;
-      margin-top: 2rem; }
+      margin-top: 4rem; }
+      @media only screen and (max-width: 400px) {
+        .about__details__product-2 {
+          margin-top: 8rem; } }
     .about__details__research {
       grid-column: 3 / 4;
       grid-row: 2 / 3; }
 
 .p3 {
-  color: #787878;
-  font-size: 1.8rem; }
+  color: #787878; }
 
 .footer {
   background-color: #f5f5f5;
@@ -98,7 +145,10 @@ html {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 20rem repeat(12, 1fr) 20rem;
-  align-items: center; }
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
   @media only screen and (max-width: 1200px) {
     .footer {
       grid-template-columns: 5rem repeat(12, 1fr) 5rem;
@@ -116,6 +166,9 @@ html {
       color: #181818;
       font-size: 2rem;
       font-style: normal; }
+      @media only screen and (max-width: 768px) {
+        .footer__email__link {
+          font-size: 1.4rem; } }
   .footer__social {
     grid-column: 12 / span 2;
     display: flex;
@@ -127,6 +180,9 @@ html {
     @media only screen and (max-width: 768px) {
       .footer__social {
         grid-column: 6 / 8; } }
+    @media only screen and (max-width: 500px) {
+      .footer__social {
+        grid-column: 5 / 8; } }
     .footer__social__icon {
       display: block;
       width: 4rem;
@@ -177,6 +233,9 @@ html {
     @media only screen and (max-width: 768px) {
       .header__menu {
         grid-column: 7 / 8; } }
+    @media only screen and (max-width: 500px) {
+      .header__menu {
+        grid-column: 6 / 8; } }
     .header__menu__link {
       color: #070707;
       text-decoration: none;
@@ -268,7 +327,8 @@ html {
     cursor: pointer;
     transition: all .5s;
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    background-position: center center; }
     @media only screen and (max-width: 768px) {
       .portfolio__proj {
         height: 100%;

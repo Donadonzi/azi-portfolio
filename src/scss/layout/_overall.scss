@@ -6,6 +6,7 @@
 	grid-template-rows: 10rem 40rem 1fr 20rem;
 	align-items: center;
 	position: relative;
+	
 
 	@media only screen and (max-width: 1200px) {
 		grid-template-columns: 10rem repeat(12, 1fr) 10rem;

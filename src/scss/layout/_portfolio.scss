@@ -10,6 +10,7 @@
 	grid-template-columns: repeat(2, calc(100% / 2));
 	grid-template-rows: repeat(3, calc(100% / 3));
 	height: 80rem;
+	
 
 	@media only screen and (max-width: 2560px) {
 		height: 150rem;
@@ -82,6 +83,7 @@
 			position: absolute;
 			top: 20%;
 			left: 45%;
+			
 		
 		}
 
@@ -93,6 +95,7 @@
 			position: absolute;
 			top: 35%;
 			left: 45%;
+			
 			
 		}
 
@@ -116,11 +119,14 @@
 
 // === CARDS POSITONS AND IMAGES=== //
 #proj-1__img {
-	background-image: url('../img/cativa-main-web.svg');
+	
 }
 #project1 {
 	grid-column: 1 /2;
 	grid-row: 1 / 2;
+	// background-image: url('../img/cativa-main-web.svg');
+	background-image: url('../img/android.svg');
+	
 }
 
 #project2 {

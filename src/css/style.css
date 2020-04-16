@@ -253,12 +253,10 @@ html {
 .hovered {
   filter: opacity(0.15); }
 
-#proj-1__img {
-  background-image: url("../img/cativa-main-web.svg"); }
-
 #project1 {
   grid-column: 1 /2;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  background-image: url("../img/android.svg"); }
 
 #project2 {
   background-color: #c4c4c4;

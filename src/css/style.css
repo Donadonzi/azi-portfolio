@@ -60,11 +60,13 @@ html {
       font-style: normal; }
   .footer__social {
     grid-column: 12 / span 2;
+    margin-right: 2rem;
     display: flex;
     justify-content: space-between; }
     @media only screen and (max-width: 767px) {
       .footer__social {
-        grid-column: 6 / 8; } }
+        grid-column: 6 / 8;
+        margin-right: 0; } }
     .footer__social__icon {
       display: block;
       width: 4rem;

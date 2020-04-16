@@ -164,7 +164,7 @@ html {
         white-space: unset; } }
 
 .portfolio {
-  height: 80rem;
+  height: 70vh;
   width: 100%;
   margin-bottom: 15rem;
   grid-column: 2 / 14;

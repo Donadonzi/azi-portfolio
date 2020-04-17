@@ -346,7 +346,7 @@ html {
         height: 20rem; } }
     .portfolio__proj:hover {
       transform: scale(1.05); }
-      @media only screen and (max-width: 1023px) {
+      @media only screen and (max-width: 768px) {
         .portfolio__proj:hover {
           transform: none; } }
     .portfolio__proj__image {

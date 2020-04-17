@@ -64,7 +64,8 @@ html {
       flex-direction: column; } }
   @media only screen and (max-width: 500px) {
     .about {
-      align-items: center; } }
+      align-items: center;
+      font-size: 1.2rem; } }
   .about h4 {
     color: #ff207E;
     margin-bottom: 2rem; }
@@ -101,11 +102,13 @@ html {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max-content);
     grid-template-rows: 25% 50%;
+    align-items: flex-start;
     gap: 5rem; }
     @media only screen and (max-width: 400px) {
       .about__details {
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem; } }
     .about__details__tools {
       grid-column: 1 / -1;
@@ -115,9 +118,7 @@ html {
       grid-row: 2 / 3; }
     .about__details__product-2 {
       grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      align-self: flex-start;
-      margin-top: 4rem; }
+      grid-row: 2 / 3; }
       @media only screen and (max-width: 400px) {
         .about__details__product-2 {
           margin-top: 8rem; } }

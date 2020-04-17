@@ -316,6 +316,12 @@ html {
       flex-direction: column;
       align-items: center;
       margin-bottom: 8rem; } }
+  @media only screen and (max-width: 768px) and (max-width: 500px) {
+    .portfolio {
+      height: 180rem; } }
+  @media only screen and (max-width: 768px) and (max-width: 375px) {
+    .portfolio {
+      height: 150rem; } }
   .portfolio__proj {
     border: 1px solid #aaaaaa;
     border-radius: 3px;
@@ -331,6 +337,13 @@ html {
         height: 100%;
         width: 100%;
         margin: 2rem; } }
+    @media only screen and (max-width: 500px) {
+      .portfolio__proj {
+        width: 100%;
+        height: 30rem; } }
+    @media only screen and (max-width: 375px) {
+      .portfolio__proj {
+        height: 20rem; } }
     .portfolio__proj:hover {
       transform: scale(1.05); }
       @media only screen and (max-width: 1023px) {

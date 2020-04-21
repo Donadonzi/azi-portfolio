@@ -1,0 +1,41 @@
+@import './components';
+@import './grid';
+@import './variables';
+@import './carousel';
+@import './typography';
+@import './footer';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+		box-sizing: border-box;
+}
+
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body {
+	width: 1440px;
+	padding: 0 20rem;
+
+	
+	// Desktop
+	@media only screen and (min-width: 1024px) {
+		width: 100%;
+	}
+
+	// Tablet
+	@media only screen and (max-width: 1023px) {
+		width: 100%;
+	}
+
+	// Mobile
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+	}
+}

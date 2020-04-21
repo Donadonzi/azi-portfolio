@@ -8,12 +8,13 @@
 .general {
 	padding: 7rem 20rem;
 	text-align: center;
-	// height: 60rem;
+	height: 70rem;
+	
 	
 
 	& h2 {
 		color: $color-pink-1;
-		margin: 3rem auto;
+		// margin: 3rem auto;
 		font-size: 4.5rem;
 	}
 
@@ -28,18 +29,23 @@
 		margin: 8rem auto;
 		line-height: 27px;
 		text-align: left;
+		&-center {
+			text-align: center !important;
+		}
 	}
 
 	&-col-dark {
 		background-color: $color-grey-3;
 		padding: 7rem;
 		text-align: left;
+		height: 30rem;
 	}
 
 	&-col-light {
 		background-color: $color-grey-4;
 		padding: 7rem;
 		text-align: left;
+		height: 30rem;
 	}
 }
 
@@ -102,5 +108,20 @@
 	& p {
 		font-size: 1.4rem;
 	}
+}
+
+.research {
+	// margin-top: 8rem !important;
+	height: 100rem;
+
+	&-col {
+	background-color: $color-grey-4;
+	height: 30rem;
+	padding: 7rem 4rem;
+	}
+}
+
+.target {
+	// margin-top: 8rem;
 }
 

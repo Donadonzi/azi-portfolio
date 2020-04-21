@@ -1,10 +1,7 @@
 .footer {
-  background-color: $color-pink-3;
+  background-color: $color-pink-2;
 	height: 15rem;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 2rem;
+	padding: 3rem 20rem;
 	width: 100%;
 
 	@media only screen and (max-width: 1200px) {
@@ -16,7 +13,7 @@
 	}
 
 	&__email {
-		
+		margin-bottom: 2rem;	
 
 		&__link {
 			text-decoration: none;
@@ -31,7 +28,7 @@
 	}
 
 	&__social {
-		
+		width: 20%;
 		display: flex;
 		justify-content: space-between;
 

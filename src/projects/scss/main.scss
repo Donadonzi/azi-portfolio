@@ -4,6 +4,7 @@
 @import './carousel';
 @import './typography';
 @import './footer';
+@import './header';
 
 *,
 *::after,
@@ -14,28 +15,53 @@
 }
 
 html {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	background-color: purple;
 }
 
 body {
-	width: 1440px;
-	padding: 0 20rem;
+	width: 100%;
+	font-size: 1.8rem;
+	background-color: orange;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 
 	
-	// Desktop
+	// Desktop large
 	@media only screen and (min-width: 1024px) {
-		width: 100%;
+		// width: 100vw;
 	}
 
-	// Tablet
-	@media only screen and (max-width: 1023px) {
-		width: 100%;
-	}
+	// // Tablet
+	// @media only screen and (max-width: 1023px) {
+	// 	width: 100%;
+	// }
 
-	// Mobile
-	@media only screen and (max-width: 767px) {
-		width: 100%;
-	}
+	// // Mobile
+	// @media only screen and (max-width: 767px) {
+	// 	width: 100%;
+	// }
 }
+
+.main__container {
+	position: relative;
+	width: 1440px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// padding: 0 20rem;
+}
+
+h1, h2, h3 {
+	color: $color-pink-1;
+	margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+

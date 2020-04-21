@@ -1,0 +1,71 @@
+.footer {
+  background-color: $color-pink-3;
+	height: 15rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	width: 100%;
+
+	@media only screen and (max-width: 1200px) {
+		
+	}
+
+	@media only screen and (max-width: 768px) {
+		
+	}
+
+	&__email {
+		
+
+		&__link {
+			text-decoration: none;
+			color: #181818;
+			font-size: 2rem;
+			font-style: normal;
+
+			@media only screen and (max-width: 768px) {
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	&__social {
+		
+		display: flex;
+		justify-content: space-between;
+
+		@media only screen and (max-width: 1200px) {
+			
+		}
+
+
+		@media only screen and (max-width: 768px) {
+			
+		
+		}
+
+		@media only screen and (max-width: 500px) {
+			
+		}
+
+		@media only screen and (max-width: 400px) {
+			
+		}
+
+		&__icon {
+			display: block;
+			width: 2rem;
+			height: 2rem;
+			color:$color-grey-2;
+			@media only screen and (max-width: 400px) {
+				transform: scale(.7);
+			}
+		}
+
+		&__link {
+			color:$color-grey-2;
+		}
+	}
+
+}

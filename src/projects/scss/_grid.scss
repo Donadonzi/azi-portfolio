@@ -1,4 +1,87 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
+@import './variables';
+
+
+
+.row {
+		@include clearfix;
+    max-width: $grid-width;
+    margin: 0 auto;
+    &:not(:last-child) {
+        // margin-bottom: $gutter-vertical;
+
+        @media only screen and (max-width: 56.25em) {
+            margin-bottom: $gutter-vertical-small;
+        }
+
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
+    [class^="col-"] {
+        float: left;
+        &:not(:last-child) {
+        margin-right: $gutter-horizantal;
+
+            @media only screen and (max-width: 56.25em) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @media only screen and (max-width: 56.25em) { // tab-port   1em = 16px
+            width: 100% !important;
+        }
+    }
+    .col-1-of-2 {
+				width: calc((100% - #{$gutter-horizantal}) / 2);
+				height: 100%;
+    }
+    .col-1-of-3 {
+				width: calc((100% - 2 * #{$gutter-horizantal}) / 3);
+				height: 100%;
+    }
+    .col-2-of-3 {
+				width: calc(2*((100% - 2 * #{$gutter-horizantal}) / 3) + #{$gutter-horizantal});
+				height: 100%;
+    }
+    .col-1-of-4 {
+				width: calc((100% - 3 * #{$gutter-horizantal}) / 4);
+				height: 100%;
+    }
+    .col-2-of-4 {
+				width: calc(2 * ((100% - 3 * #{$gutter-horizantal}) / 4) + #{$gutter-horizantal});
+				height: 100%;
+    }
+    .col-3-of-4 {
+				width: calc(3 * ((100% - 3 * #{$gutter-horizantal}) / 4) + 2 * #{$gutter-horizantal});
+				height: 100%;
+    }
+
+}
+
+
+
+
+
+// KHODAM
+
+
+
+
+
+
+@media screen and (min-width:1200px) {
 .col-desk-1 { width: calc((1/12) * 100%); }
 .col-desk-2 { width: calc((2/12) * 100%); }
 .col-desk-3 { width: calc((3/12) * 100%); }
@@ -11,13 +94,18 @@
 .col-desk-10 { width: calc((10/12) * 100%); }
 .col-desk-11 { width: calc((11/12) * 100%); }
 .col-desk-12 { width: calc((12/12) * 100%); }
+}
 
+@media screen and (max-width:600px) {
 .col-mob-1 { width: calc((1/6) * 100%); }
 .col-mob-2 { width: calc((2/6) * 100%); }
 .col-mob-3 { width: calc((3/6) * 100%); }
 .col-mob-4 { width: calc((4/6) * 100%); }
 .col-mob-5 { width: calc((5/6) * 100%); }
 .col-mob-6 { width: calc((6/6) * 100%); }
+}
+
+
 
 
 

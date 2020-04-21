@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/affe8b8d44.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -16,7 +17,7 @@
 </head>
 <body>
 	<div class="main__container">
-
+<!-- ========================================= HEADER ======================================= -->
 		<div class="header">
 			<div class="header__logo ">			
 				<img src="./img/Logo.png" alt="azi-logo">
@@ -35,7 +36,7 @@
 				</ul>
 			</div>
 		</div>
-
+<!-- ========================================= OVERVIEW ======================================= -->
 		<div class="overview row">
 			<div class="col-1-of-3">
 				<div class="overview__text">
@@ -57,6 +58,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- ========================================= PROJECT BRIEF ======================================= -->
 		<div class="row project__brief">
 			<div class="col-1-of-4">
 				<h4>Tools</h4>
@@ -97,7 +100,7 @@
 		<!-- ========================================= RESEARCH ======================================= -->
 		<div class="row research general">
 			<h2>RESEARCH</h2>
-			<p class="general-desc general-desc-center">
+			<p class="general-desc centered">
 				<strong>Survey:</strong> Responses: <strong>22</strong>, women: <strong>16</strong>, 23-30 years old:
 				<strong>18</strong>
 			</p>
@@ -155,9 +158,75 @@
 				</div>
 			</div>
 		</div>
-		
+		<!-- ========================================= PERSONA ======================================= -->
+		<div class="row persona">
+			<h2 class="centered">PERSONA</h2>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+				<div class="carousel-cell">
 
-		
+					<div class="persona__card">
+
+						<div class="persona__card__info">
+							<img src="./img/Meca/Robert.png" alt="Robert pic" class="persona__card__image">
+							<div class="persona__card__name">
+								<h4>Robert</h4>
+								<p>28</p>
+								<p>Engineer</p>
+								<p>Live in San Francisco</p>
+
+								<br />
+								Art lover | Sociable
+							</div>
+						</div>
+
+						<div class="persona__needs">
+							<h4>Needs</h4>
+							<p>Encourage to find and visit public arts Meet peers who love art as well</p>
+						</div>
+
+						<div class="persona__goals">
+							<h4>Goals</h4>
+							<p>Visit San Francisco public arts more Find new friends with same interests</p>
+						</div>
+
+					</div>
+
+				</div> <!--end carousel-cell-->
+
+				<div class="carousel-cell">
+					<div class="persona__card">
+					
+						<div class="persona__card__info">
+							<img src="./img/Meca/Ania.png" alt="Robert pic" class="persona__card__image">
+							<div class="persona__card__name">
+								<h4>Ania</h4>
+								<p>20</p>
+								<p>Studen</p>
+								<p>San Francisco new resident</p>
+					
+								<br />
+								Culture lover | Tech savy
+							</div>
+						</div>
+					
+						<div class="persona__needs">
+							<h4>Needs</h4>
+							<p>Encourage to find and visit public arts Meet peers who love art as well</p>
+						</div>
+					
+						<div class="persona__goals">
+							<h4>Goals</h4>
+							<p>Visit San Francisco public arts more Find new friends with same interests</p>
+						</div>
+					
+					</div>
+				</div><!--end carousel-cell-->
+
+			</div> <!--end main-carousel-->
+
+		</div>
+
+		<!-- ========================================= FOOTER ======================================= -->
 			<!-- <div class="footer col-desk-12">
 				<div class="footer__email">
 					<address>
@@ -182,5 +251,6 @@
 	</div> <!--end main__container-->
 	
 	<script src="./js/index.js" ></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

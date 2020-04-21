@@ -18,8 +18,6 @@
     margin: 8rem auto;
     line-height: 27px;
     text-align: left; }
-    .general-desc-center {
-      text-align: center !important; }
   .general-col-dark {
     background-color: #aaaaaa;
     padding: 7rem;
@@ -66,7 +64,7 @@
 .project__brief {
   background-color: #c4c4c4;
   width: 100%;
-  padding: 5rem 20rem;
+  padding: 7rem 20rem;
   margin-top: 0; }
   .project__brief h4 {
     font-size: 1.7rem; }
@@ -79,6 +77,36 @@
     background-color: #c4c4c4;
     height: 30rem;
     padding: 7rem 4rem; }
+
+.persona {
+  height: 60rem;
+  font-size: 1.7rem; }
+  .persona h2 {
+    color: black; }
+  .persona h4 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem; }
+  .persona__card {
+    height: 100%;
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4rem;
+    justify-items: flex-start; }
+    .persona__card__info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap; }
+      .persona__card__info img {
+        display: block;
+        height: 100%;
+        width: 90%;
+        margin-right: 3rem; }
+    .persona__card__name {
+      width: 100%; }
+
+.centered {
+  text-align: center !important; }
 
 .row {
   max-width: 144rem;
@@ -163,6 +191,38 @@
     width: calc((5/6) * 100%); }
   .col-mob-6 {
     width: calc((6/6) * 100%); } }
+
+.main-carousel {
+  width: 40vw;
+  height: 60rem;
+  margin-bottom: 20px; }
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px; }
+
+.flickity-button {
+  background: #333; }
+
+.flickity-button:hover {
+  background: #ff207E; }
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px; }
+
+/* icon color */
+.flickity-button-icon {
+  fill: white; }
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px; }
+
+.flickity-prev-next-button.next {
+  right: -40px; }
 
 html {
   font-family: 'Open Sans', sans-serif;

@@ -2,17 +2,24 @@
 #main-description {
   color: black; }
 
+.centered {
+  text-align: center !important; }
+
 .general {
   padding: 7rem 20rem;
   text-align: center;
   height: 70rem; }
   .general h2 {
     color: #ff207E;
+    margin: 4rem auto;
     font-size: 4.5rem; }
   .general h4 {
-    color: black;
+    color: #575757;
     font-size: 3.5rem;
-    margin-bottom: 2rem; }
+    margin: 2rem auto; }
+  .general h6 {
+    font-size: 2.5rem;
+    margin: 2rem auto; }
   .general-desc {
     font-size: 1.9rem;
     margin: 8rem auto;
@@ -81,9 +88,12 @@
 .persona {
   height: 70rem;
   font-size: 1.6rem;
-  margin-bottom: 12rem; }
+  margin-bottom: 12rem;
+  width: 100%;
+  padding: 5rem 20rem; }
   .persona h2 {
-    color: black; }
+    font-size: 3.5rem;
+    color: #575757; }
   .persona h4 {
     font-size: 2.5rem;
     margin-bottom: 2rem; }
@@ -106,8 +116,90 @@
     .persona__card__name {
       width: 100%; }
 
-.centered {
-  text-align: center !important; }
+.process {
+  height: 140rem;
+  margin-bottom: 8rem;
+  padding: 0 20rem; }
+  .process img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 5rem auto; }
+  .process__sketch {
+    height: 50rem; }
+  .process__sketch__image {
+    height: 40rem; }
+    .process__sketch__image img {
+      height: 100%; }
+
+.engage {
+  height: 60rem;
+  background-color: orange;
+  margin-bottom: 8rem; }
+  .engage h5 {
+    color: #ff207E;
+    font-size: 3rem; }
+
+.wireframes {
+  width: 100%;
+  padding: 0 20rem; }
+  .wireframes h4 {
+    font-size: 3.5rem;
+    margin-bottom: 8rem; }
+  .wireframes__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 8rem; }
+
+.iterations {
+  width: 100%;
+  padding: 0 20rem;
+  margin-bottom: 8rem; }
+  .iterations h4 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem; }
+  .iterations h6 {
+    font-size: 2.5rem;
+    margin-bottom: 6rem; }
+  .iterations__task {
+    height: 50rem; }
+
+.architecture {
+  width: 100%;
+  padding: 0 20rem;
+  margin-bottom: 8rem; }
+  .architecture h4 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem; }
+  .architecture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 8rem auto; }
+
+.final {
+  width: 100%;
+  padding: 5rem 20rem;
+  height: 50rem;
+  margin-bottom: 8rem;
+  background-color: #c4c4c4; }
+  .final h6 {
+    font-size: 2rem;
+    margin-bottom: 6rem; }
+  .final__text {
+    font-size: 2rem;
+    width: 70%;
+    text-align: left;
+    margin: 0 auto; }
+
+.functions {
+  width: 100%;
+  padding: 5rem 20rem;
+  color: #575757; }
+  .functions p {
+    font-size: 1.6rem;
+    text-align: left; }
 
 .row {
   max-width: 144rem;
@@ -196,7 +288,7 @@
 .main-carousel {
   width: 40vw;
   height: 60rem;
-  margin-bottom: 20px; }
+  margin: 2rem auto; }
 
 .carousel-cell {
   width: 100%;
@@ -315,6 +407,16 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 1023px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 767px) {
+    html {
+      font-size: 50%; } }
 
 body {
   width: 100%;

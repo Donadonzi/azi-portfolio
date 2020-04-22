@@ -5,23 +5,30 @@
 	color: black;
 }
 
+.centered {
+			text-align: center !important;
+}
+
 .general {
 	padding: 7rem 20rem;
 	text-align: center;
 	height: 70rem;
 	
-	
-
 	& h2 {
 		color: $color-pink-1;
-		// margin: 3rem auto;
+		margin: 4rem auto;
 		font-size: 4.5rem;
 	}
 
 	& h4 {
-		color: black;
+		color: #575757;;
 		font-size: 3.5rem;
-		margin-bottom: 2rem;
+		margin: 2rem auto;
+	}
+
+	& h6 {
+		font-size: 2.5rem;
+		margin: 2rem auto;
 	}
 
 	&-desc {
@@ -127,15 +134,19 @@
 	height: 70rem;
 	font-size: 1.6rem;
 	margin-bottom: 12rem;
+	width: 100%;
+	padding: 5rem 20rem;
 	
 	
 
 	& h2 {
-		color: black;
+		font-size: 3.5rem;
+		color: #575757;
 	}
 	& h4 {
 		font-size: 2.5rem;
 		margin-bottom: 2rem;
+		
 	}
 
 	&__card {
@@ -164,10 +175,127 @@
 		}
 	}
 
+}
+
+.process {
+	height: 140rem;
+	margin-bottom: 8rem;
+	padding: 0 20rem;
+
+	& img {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin: 5rem auto;
+	}
+
+	&__sketch {
+		height: 50rem;
+	}
+
+	&__sketch__image{
+		height: 40rem;
+		
+		& img {
+			height: 100%;
+		}
+	}
+}
+
+.engage {
+	height: 60rem;
+	background-color: orange;
+	margin-bottom: 8rem;
+	& h5 {
+		color: $color-pink-1;
+		font-size: 3rem;
+	}
+}
+
+.wireframes {
+	width: 100%;
+	padding: 0 20rem;
+	
+	& h4 {
+		font-size: 3.5rem;
+		margin-bottom: 8rem;
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 8rem;
+	}
+}
+
+.iterations {
+	width: 100%;
+	padding: 0 20rem;
+	margin-bottom: 8rem;
+
+	& h4 {
+		font-size: 3.5rem;
+		margin-bottom: 4rem;
+	}
+
+	& h6 {
+		font-size: 2.5rem;
+		margin-bottom: 6rem;
+	}
+
+	&__task {
+		height: 50rem;
+	}
 
 }
 
-.centered {
-			text-align: center !important;
-		}
+.architecture {
+	width: 100%;
+	padding: 0 20rem;
+	margin-bottom: 8rem;
+	& h4 {
+		font-size: 3.5rem;
+		margin-bottom: 4rem;
+	}
+
+	& img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 8rem auto;
+	}
+}
+
+.final {
+	width: 100%;
+	padding: 5rem 20rem;
+	height: 50rem;
+	margin-bottom: 8rem;
+	background-color: $color-grey-4;
+	& h6 {
+		font-size: 2rem;
+		margin-bottom: 6rem;
+	}
+
+	&__text {
+		font-size: 2rem;
+		width: 70%;
+		text-align: left;
+		margin: 0 auto;
+	}
+}
+
+.functions {
+	width: 100%;
+	padding: 5rem 20rem;
+	color: #575757;
+
+	& p {
+		font-size: 1.6rem;
+		text-align: left;
+	}
+	
+}
+
 

@@ -23,6 +23,10 @@
 .flickity-button:hover {
 	// background: #F90;
 	background: $color-pink-1;
+
+	@media only screen and (max-width: 768px) {
+		background: unset;
+	}
 }
 
 .flickity-prev-next-button {

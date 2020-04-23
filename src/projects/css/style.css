@@ -67,14 +67,16 @@
   width: 100%;
   height: 20rem;
   padding: 7rem 20rem;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 8rem; }
   @media only screen and (max-width: 1024px) {
     .project__brief {
       padding: 7rem 20rem; } }
   @media only screen and (max-width: 900px) {
     .project__brief {
       padding: 4rem 2rem;
-      height: 35rem; } }
+      height: 35rem;
+      margin-bottom: 4rem; } }
   .project__brief h4 {
     font-size: 1.7rem; }
   .project__brief p {
@@ -82,7 +84,8 @@
 
 .impact {
   width: 100%;
-  padding: 7rem 20rem; }
+  padding: 7rem 20rem;
+  margin-bottom: 8rem; }
   @media only screen and (max-width: 1024px) {
     .impact {
       padding: 0 10rem; } }
@@ -92,7 +95,8 @@
       padding: 2rem 5rem; } }
   @media only screen and (max-width: 768px) {
     .impact {
-      height: 140rem; } }
+      height: 130rem;
+      margin-bottom: 4rem; } }
   @media only screen and (max-width: 900px) {
     .impact .general-desc {
       width: 100%; } }
@@ -115,12 +119,15 @@
       padding: 3rem 5rem; } }
   .research .row {
     width: 100%;
-    padding: 4rem 0;
+    padding: 1rem 0;
     margin-bottom: 3rem !important; }
     @media only screen and (max-width: 900px) {
       .research .row {
         display: flex;
         justify-content: space-between; } }
+    @media only screen and (max-width: 768px) {
+      .research .row {
+        margin-bottom: 0 !important; } }
   .research-col {
     background-color: #c4c4c4;
     height: 100%;
@@ -202,8 +209,9 @@
       height: 160rem; } }
   @media only screen and (max-width: 768px) {
     .process {
-      padding: 2rem 5rem;
-      margin-bottom: 0; } }
+      padding: 2rem 2rem;
+      margin-bottom: 0;
+      height: 140rem; } }
   .process img {
     display: block;
     width: 80%;
@@ -507,11 +515,15 @@
       .app-details__compo__text-header {
         font-size: 3.5rem;
         font-weight: bold;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        margin-top: 5rem; }
       .app-details__compo__text-para {
         font-size: 2rem;
         font-weight: normal;
         margin-bottom: 3rem; }
+  @media only screen and (max-width: 426px) {
+    .app-details__first-col {
+      height: 60rem; } }
 
 .user-flow {
   height: 170rem;
@@ -577,16 +589,16 @@
         margin-bottom: 4rem; } }
   @media only screen and (max-width: 1024px) {
     .row {
-      max-width: 102rem; } }
+      max-width: 104rem; } }
   @media only screen and (max-width: 900px) {
     .row {
-      max-width: 90rem; } }
+      max-width: 92rem; } }
   @media only screen and (max-width: 768px) {
     .row {
       max-width: 80rem; } }
   @media only screen and (max-width: 425px) {
     .row {
-      max-width: 40rem; } }
+      max-width: 52rem; } }
   @media only screen and (max-width: 320px) {
     .row {
       max-width: 30rem;
@@ -633,6 +645,9 @@
 
 .flickity-button:hover {
   background: #ff207E; }
+  @media only screen and (max-width: 768px) {
+    .flickity-button:hover {
+      background: unset; } }
 
 .flickity-prev-next-button {
   width: 30px;

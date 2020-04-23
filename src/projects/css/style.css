@@ -5,8 +5,12 @@
 .centered {
   text-align: center !important; }
 
+@media only screen and (max-width: 900px) {
+  .media {
+    display: none !important; } }
+
 .general {
-  padding: 7rem 20rem;
+  padding: 5rem 20rem;
   text-align: center;
   height: 70rem; }
   .general h2 {
@@ -30,18 +34,71 @@
     padding: 7rem;
     text-align: left;
     height: 30rem; }
+    @media only screen and (max-width: 1024px) {
+      .general-col-dark {
+        height: 40rem;
+        padding: 4rem; } }
   .general-col-light {
     background-color: #c4c4c4;
     padding: 7rem;
     text-align: left;
     height: 30rem; }
+    @media only screen and (max-width: 1024px) {
+      .general-col-light {
+        padding: 4rem;
+        height: 40rem; } }
 
 .overview {
-  height: 54rem;
+  height: 48rem;
   width: 100%;
   margin-top: 5rem;
   margin-bottom: 0 !important;
-  padding: 0 20rem; }
+  padding: 0 20rem;
+  position: relative; }
+  @media only screen and (max-width: 500px) {
+    .overview {
+      height: 70rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .overview__text {
+    padding-top: 10rem;
+    height: 100%; }
+    @media only screen and (max-width: 900px) {
+      .overview__text {
+        width: 40%; } }
+  @media only screen and (max-width: 900px) and (max-width: 500px) {
+    .overview__text {
+      width: 100%;
+      padding-top: 3rem; } }
+    .overview__text p {
+      font-size: 1.4rem;
+      margin: 2rem auto; }
+  .overview__image {
+    background-image: url(../img/Meca/Web/hero@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: 100%;
+    position: relative; }
+    @media only screen and (max-width: 900px) {
+      .overview__image {
+        background-image: url(../img/Meca/Mobile/hero@1x.png);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0; } }
+    .overview__image img {
+      display: block;
+      width: 80%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      @media only screen and (max-width: 1024px) {
+        .overview__image img {
+          width: 100%; } }
   .overview__spec {
     list-style: none;
     margin: 3rem auto; }
@@ -50,38 +107,82 @@
     .overview__spec li:not(:last-child) {
       border-right: 2px solid #ff207E;
       padding-right: 1rem; }
-  .overview__text {
-    padding-top: 10rem;
-    height: 100%; }
-    .overview__text p {
-      font-size: 1.6rem;
-      margin: 4rem auto; }
-  .overview__image {
-    height: 100%;
-    text-align: center;
-    position: relative; }
-    .overview__image img {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
 
 .project__brief {
   background-color: #c4c4c4;
   width: 100%;
+  height: 20rem;
   padding: 7rem 20rem;
   margin-top: 0; }
+  @media only screen and (max-width: 1024px) {
+    .project__brief {
+      padding: 7rem 20rem; } }
+  @media only screen and (max-width: 900px) {
+    .project__brief {
+      padding: 4rem 2rem;
+      height: 35rem; } }
   .project__brief h4 {
     font-size: 1.7rem; }
   .project__brief p {
     font-size: 1.4rem; }
 
+.impact {
+  width: 100%;
+  padding: 7rem 20rem; }
+  @media only screen and (max-width: 900px) {
+    .impact {
+      height: 120rem;
+      padding: 2rem 5rem; } }
+  @media only screen and (max-width: 900px) {
+    .impact .general-desc {
+      width: 100%; } }
+  @media only screen and (max-width: 900px) {
+    .impact__col {
+      height: 40rem;
+      padding: 4rem 4rem; } }
+
 .research {
-  height: 100rem; }
+  margin-top: 8rem !important;
+  height: 110rem;
+  padding: 7rem 20rem; }
+  @media only screen and (max-width: 1024px) {
+    .research {
+      height: 120rem;
+      padding: 7rem 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .research {
+      height: 140rem;
+      padding: 5rem 5rem; } }
+  .research .row {
+    width: 100%;
+    padding: 4rem 0; }
+    @media only screen and (max-width: 900px) {
+      .research .row {
+        display: flex;
+        justify-content: space-between; } }
   .research-col {
     background-color: #c4c4c4;
-    height: 30rem;
-    padding: 7rem 4rem; }
+    height: 100%;
+    padding: 5rem 4rem;
+    height: 30rem; }
+    @media only screen and (max-width: 1024px) {
+      .research-col {
+        height: 25rem;
+        padding: 3rem 3rem;
+        margin: 3rem 6rem; } }
+
+.target {
+  width: 100%;
+  height: 80rem;
+  padding: 7rem 20rem; }
+  @media only screen and (max-width: 900px) {
+    .target {
+      height: 130rem;
+      padding: 4rem 10rem; } }
+  @media only screen and (max-width: 500px) {
+    .target {
+      height: 140rem;
+      padding: 2rem 5rem; } }
 
 .persona {
   height: 80rem;
@@ -89,6 +190,12 @@
   margin-bottom: 12rem;
   width: 100%;
   padding: 5rem 20rem; }
+  @media only screen and (max-width: 900px) {
+    .persona {
+      padding: 4rem 10rem; } }
+  @media only screen and (max-width: 700px) {
+    .persona {
+      padding: 2rem 7rem; } }
   .persona h2 {
     font-size: 3.5rem;
     color: #575757; }
@@ -101,7 +208,8 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 4rem;
-    justify-items: flex-start; }
+    justify-items: flex-start;
+    width: 100%; }
     .persona__card__info {
       display: flex;
       justify-content: space-between;
@@ -117,7 +225,15 @@
 .process {
   height: 140rem;
   margin-bottom: 8rem;
+  margin-top: 8rem !important;
   padding: 0 20rem; }
+  @media only screen and (max-width: 900px) {
+    .process {
+      padding: 4rem 10rem;
+      height: 160rem; } }
+  @media only screen and (max-width: 700px) {
+    .process {
+      padding: 2rem 5rem; } }
   .process img {
     display: block;
     width: 80%;
@@ -125,24 +241,79 @@
     margin: 5rem auto; }
   .process__sketch {
     height: 50rem; }
+    @media only screen and (max-width: 900px) {
+      .process__sketch {
+        height: 100rem;
+        padding: 4rem 10rem; } }
+    @media only screen and (max-width: 700px) {
+      .process__sketch {
+        padding: 2rem 5rem; } }
   .process__sketch__image {
     height: 40rem; }
     .process__sketch__image img {
       height: 100%; }
+  .process__quote {
+    background-color: #ADEBEB;
+    height: 20rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 1rem 5rem;
+    margin-bottom: 8rem;
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .process__quote {
+        display: block; } }
+    .process__quote blockquote {
+      line-height: 145%;
+      padding: 2%;
+      margin-top: 40px;
+      position: relative; }
+    .process__quote blockquote::before {
+      content: "\201C";
+      display: block;
+      position: absolute;
+      left: -5px;
+      top: -5px; }
+    .process__quote cite {
+      font-size: 1.2rem; }
 
 .engage {
   height: 75rem;
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  width: 100%;
+  padding: 7rem 20rem;
+  position: relative; }
+  @media only screen and (max-width: 768px) {
+    .engage {
+      height: 60rem;
+      padding: 2rem 5rem; } }
   .engage h5 {
     color: #ff207E;
     font-size: 3rem;
     margin-bottom: 6rem; }
-  .engage__image img {
-    display: block; }
+  .engage__image {
+    width: 80%; }
+    .engage__image img {
+      display: block;
+      width: 80%;
+      height: auto;
+      position: absolute;
+      bottom: 4rem; }
 
 .wireframes {
   width: 100%;
   padding: 0 20rem; }
+  @media only screen and (max-width: 1024px) {
+    .wireframes {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .wireframes {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .wireframes {
+      padding: 0 3rem; } }
   .wireframes h4 {
     font-size: 3.5rem;
     margin-bottom: 8rem; }
@@ -156,6 +327,15 @@
   width: 100%;
   padding: 0 20rem;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 1024px) {
+    .iterations {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .iterations {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .iterations {
+      padding: 0 3rem; } }
   .iterations h4 {
     font-size: 3.5rem;
     margin-bottom: 4rem; }
@@ -169,6 +349,15 @@
   width: 100%;
   padding: 0 20rem;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 1024px) {
+    .architecture {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .architecture {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .architecture {
+      padding: 0 3rem; } }
   .architecture h4 {
     font-size: 3.5rem;
     margin-bottom: 4rem; }
@@ -184,6 +373,15 @@
   height: 50rem;
   margin-bottom: 8rem;
   background-color: #c4c4c4; }
+  @media only screen and (max-width: 1024px) {
+    .final {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .final {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .final {
+      padding: 0 3rem; } }
   .final h6 {
     font-size: 2rem;
     margin-bottom: 6rem; }
@@ -196,7 +394,18 @@
 .functions {
   width: 100%;
   padding: 5rem 20rem;
-  color: #575757; }
+  color: #575757;
+  margin-bottom: 8rem; }
+  @media only screen and (max-width: 1024px) {
+    .functions {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .functions {
+      padding: 0 5rem;
+      height: 110rem; } }
+  @media only screen and (max-width: 768px) {
+    .functions {
+      padding: 0 3rem; } }
   .functions p {
     font-size: 1.6rem;
     text-align: left; }
@@ -211,6 +420,15 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 1024px) {
+    .steps {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .steps {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .steps {
+      padding: 0 3rem; } }
   .steps__compo {
     width: 80%;
     height: 70rem;
@@ -305,18 +523,26 @@
     display: table;
     clear: both; }
   .row:not(:last-child) {
-    margin-bottom: 4rem; }
-    @media only screen and (max-width: 56.25em) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 1024px) {
       .row:not(:last-child) {
         margin-bottom: 4rem; } }
-  .row:last-child {
-    margin-bottom: 8rem; }
-  .row:first-of-type {
-    margin-top: 8rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 1024px) {
     .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
+      max-width: 102rem; } }
+  @media only screen and (max-width: 900px) {
+    .row {
+      max-width: 90rem; } }
+  @media only screen and (max-width: 768px) {
+    .row {
+      max-width: 80rem; } }
+  @media only screen and (max-width: 425px) {
+    .row {
+      max-width: 40rem; } }
+  @media only screen and (max-width: 320px) {
+    .row {
+      max-width: 30rem;
+      padding: 0 1rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -385,6 +611,9 @@
   width: 50%;
   height: 100%;
   margin: 2rem auto; }
+  @media only screen and (max-width: 900px) {
+    .main-carousel {
+      width: 100%; } }
 
 .carousel-cell {
   width: 100%;
@@ -506,7 +735,10 @@ html {
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media only screen and (max-width: 1023px) {
     html {
       font-size: 56.25%; } }

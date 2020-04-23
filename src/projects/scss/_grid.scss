@@ -11,29 +11,47 @@
 
 
 .row {
+
+	// display:flex;
+	// flex-wrap:wrap;
+	// justify-content: space-between;
+	// padding: 20px;
+	
 		@include clearfix;
     max-width: $grid-width;
     margin: 0 auto;
     &:not(:last-child) {
         margin-bottom: $gutter-horizantal;
 
-        @media only screen and (max-width: 56.25em) {
-            margin-bottom: $gutter-horizantal;
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: $gutter-horizantal-small;
         }
 
 		}
-		&:last-child {
-			margin-bottom: $gutter-horizantal-large;
-		}
-		&:first-of-type {
-			margin-top: $gutter-horizantal-large;
-		}
 
-	
-
-    @media only screen and (max-width: 56.25em) {
-        max-width: 50rem;
-        padding: 0 3rem;
+		@media only screen and (max-width: 1024px) {
+        max-width: 102rem;
+        // padding: 0 10rem;
+		}
+				
+    @media only screen and (max-width: 900px) {
+        max-width: 90rem;
+        // padding: 0 10rem;
+		}
+		
+		@media only screen and (max-width: 768px) {
+        max-width: 80rem;
+        // padding: 0 8rem;
+		}
+		
+		@media only screen and (max-width: 425px) {
+        max-width: 40rem;
+        // padding: 0 4rem;
+		}
+		
+		@media only screen and (max-width: 320px) {
+        max-width: 30rem;
+        padding: 0 1rem;
     }
 
     [class^="col-"] {
@@ -43,14 +61,16 @@
 
             @media only screen and (max-width: 56.25em) {
                 margin-right: 0;
-                margin-bottom: $gutter-horizantal;
+                margin-bottom: $gutter-horizantal-small;
             }
         }
 
         @media only screen and (max-width: 56.25em) { // tab-port   1em = 16px
             width: 100% !important;
         }
-    }
+		}
+		
+
     .col-1-of-2 {
 				width: calc((100% - #{$gutter-vertical}) / 2);
 				

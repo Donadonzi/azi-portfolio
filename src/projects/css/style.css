@@ -2,52 +2,6 @@
 #main-description {
   color: black; }
 
-.centered {
-  text-align: center !important; }
-
-@media only screen and (max-width: 900px) {
-  .media {
-    display: none !important; } }
-
-.general {
-  padding: 5rem 20rem;
-  text-align: center;
-  height: 70rem; }
-  .general h2 {
-    color: #ff207E;
-    margin: 4rem auto;
-    font-size: 4.5rem; }
-  .general h4 {
-    color: #575757;
-    font-size: 3.5rem;
-    margin: 2rem auto; }
-  .general h6 {
-    font-size: 2.5rem;
-    margin: 2rem auto; }
-  .general-desc {
-    font-size: 1.9rem;
-    margin: 8rem auto;
-    line-height: 27px;
-    text-align: left; }
-  .general-col-dark {
-    background-color: #aaaaaa;
-    padding: 7rem;
-    text-align: left;
-    height: 30rem; }
-    @media only screen and (max-width: 1024px) {
-      .general-col-dark {
-        height: 40rem;
-        padding: 4rem; } }
-  .general-col-light {
-    background-color: #c4c4c4;
-    padding: 7rem;
-    text-align: left;
-    height: 30rem; }
-    @media only screen and (max-width: 1024px) {
-      .general-col-light {
-        padding: 4rem;
-        height: 40rem; } }
-
 .overview {
   height: 48rem;
   width: 100%;
@@ -369,19 +323,19 @@
 
 .final {
   width: 100%;
-  padding: 5rem 20rem;
+  padding: 7rem 20rem;
   height: 50rem;
   margin-bottom: 8rem;
   background-color: #c4c4c4; }
   @media only screen and (max-width: 1024px) {
     .final {
-      padding: 0 10rem; } }
+      padding: 5rem 10rem; } }
   @media only screen and (max-width: 900px) {
     .final {
-      padding: 0 5rem; } }
+      padding: 3rem 5rem; } }
   @media only screen and (max-width: 768px) {
     .final {
-      padding: 0 3rem; } }
+      padding: 2rem 3rem; } }
   .final h6 {
     font-size: 2rem;
     margin-bottom: 6rem; }
@@ -402,15 +356,33 @@
   @media only screen and (max-width: 900px) {
     .functions {
       padding: 0 5rem;
-      height: 110rem; } }
+      height: 150rem; } }
   @media only screen and (max-width: 768px) {
     .functions {
       padding: 0 3rem; } }
+  .functions h4 {
+    color: #575757;
+    font-size: 3.5rem;
+    margin-bottom: 8rem;
+    text-align: center; }
+  .functions h6 {
+    font-size: 2.5rem;
+    margin: 2rem auto; }
   .functions p {
     font-size: 1.6rem;
     text-align: left; }
+    @media only screen and (max-width: 900px) {
+      .functions p {
+        width: 50%; } }
   .functions .col-1-of-3 {
-    padding: 0 5rem; }
+    padding: 1rem 5rem;
+    margin-bottom: 8rem !important; }
+    @media only screen and (max-width: 900px) {
+      .functions .col-1-of-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem 2rem; } }
 
 .steps {
   height: 220rem;
@@ -425,7 +397,8 @@
       padding: 0 10rem; } }
   @media only screen and (max-width: 900px) {
     .steps {
-      padding: 0 5rem; } }
+      padding: 0 5rem;
+      height: 140rem; } }
   @media only screen and (max-width: 768px) {
     .steps {
       padding: 0 3rem; } }
@@ -435,20 +408,30 @@
     display: flex;
     align-items: center;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 900px) {
+      .steps__compo {
+        height: 40rem;
+        margin-bottom: 3rem; } }
     .steps__compo__image {
       width: 40%;
       height: 100%;
-      margin-right: 8rem; }
+      margin-right: 6rem; }
       .steps__compo__image img {
         display: block;
         width: 100%;
         height: auto; }
     .steps__compo__text {
-      width: 40%; }
+      width: 50%; }
       .steps__compo__text-header {
         font-size: 4rem; }
+        @media only screen and (max-width: 900px) {
+          .steps__compo__text-header {
+            font-size: 2.5rem; } }
       .steps__compo__text-para {
         font-size: 2rem; }
+        @media only screen and (max-width: 900px) {
+          .steps__compo__text-para {
+            font-size: 1.6rem; } }
 
 .app-details {
   background-color: #f5f5f5;
@@ -459,12 +442,28 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 1024px) {
+    .app-details {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .app-details {
+      padding: 0 5rem;
+      height: 280rem; } }
+  @media only screen and (max-width: 768px) {
+    .app-details {
+      padding: 0 3rem; } }
   .app-details__compo {
     width: 80%;
     height: 70rem;
     display: flex;
     align-items: flex-end;
     margin-bottom: 7rem; }
+    @media only screen and (max-width: 900px) {
+      .app-details__compo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 80rem; } }
     .app-details__compo__image {
       width: 40%;
       height: 100%;
@@ -476,6 +475,9 @@
     .app-details__compo__text {
       width: 40%;
       margin: 0 5rem; }
+      @media only screen and (max-width: 900px) {
+        .app-details__compo__text {
+          width: 80%; } }
       .app-details__compo__text-header {
         font-size: 3.5rem;
         font-weight: bold;
@@ -493,12 +495,32 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 1024px) {
+    .user-flow {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .user-flow {
+      padding: 0 5rem;
+      height: 90rem; } }
+  @media only screen and (max-width: 768px) {
+    .user-flow {
+      padding: 0 3rem; } }
 
 .conclusion {
   background-color: #f5f5f5;
   width: 100%;
   height: 70rem;
   padding: 20rem 20rem; }
+  @media only screen and (max-width: 1024px) {
+    .conclusion {
+      padding: 5rem 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .conclusion {
+      padding: 5rem 5rem;
+      height: 50rem; } }
+  @media only screen and (max-width: 768px) {
+    .conclusion {
+      padding: 4rem 3rem; } }
   .conclusion h2 {
     color: #ff207E;
     font-size: 4rem;
@@ -567,46 +589,6 @@
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
 
-@media screen and (min-width: 1200px) {
-  .col-desk-1 {
-    width: calc((1/12) * 100%); }
-  .col-desk-2 {
-    width: calc((2/12) * 100%); }
-  .col-desk-3 {
-    width: calc((3/12) * 100%); }
-  .col-desk-4 {
-    width: calc((4/12) * 100%); }
-  .col-desk-5 {
-    width: calc((5/12) * 100%); }
-  .col-desk-6 {
-    width: calc((6/12) * 100%); }
-  .col-desk-7 {
-    width: calc((7/12) * 100%); }
-  .col-desk-8 {
-    width: calc((8/12) * 100%); }
-  .col-desk-9 {
-    width: calc((9/12) * 100%); }
-  .col-desk-10 {
-    width: calc((10/12) * 100%); }
-  .col-desk-11 {
-    width: calc((11/12) * 100%); }
-  .col-desk-12 {
-    width: calc((12/12) * 100%); } }
-
-@media screen and (max-width: 600px) {
-  .col-mob-1 {
-    width: calc((1/6) * 100%); }
-  .col-mob-2 {
-    width: calc((2/6) * 100%); }
-  .col-mob-3 {
-    width: calc((3/6) * 100%); }
-  .col-mob-4 {
-    width: calc((4/6) * 100%); }
-  .col-mob-5 {
-    width: calc((5/6) * 100%); }
-  .col-mob-6 {
-    width: calc((6/6) * 100%); } }
-
 .main-carousel {
   width: 50%;
   height: 100%;
@@ -656,7 +638,19 @@ html {
   background-color: #fc4c95;
   height: 15rem;
   padding: 3rem 20rem;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .footer {
+      padding: 3rem 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .footer {
+      padding: 3rem 7rem; } }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      padding: 3rem 5rem; } }
   .footer__email {
     margin-bottom: 2rem; }
     .footer__email__link {
@@ -668,7 +662,7 @@ html {
         .footer__email__link {
           font-size: 1.4rem; } }
   .footer__social {
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-between; }
     .footer__social__icon {
@@ -676,7 +670,7 @@ html {
       width: 2rem;
       height: 2rem;
       color: #787878; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 768px) {
         .footer__social__icon {
           transform: scale(0.7); } }
     .footer__social__link {
@@ -697,6 +691,15 @@ html {
   justify-content: space-between;
   padding: 3rem 20rem;
   width: 100%; }
+  @media only screen and (max-width: 1024px) {
+    .header {
+      padding: 3rem 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .header {
+      padding: 3rem 7rem; } }
+  @media only screen and (max-width: 768px) {
+    .header {
+      padding: 2rem 5rem; } }
   .header__logo {
     height: 40px;
     width: 68px;
@@ -708,6 +711,9 @@ html {
   .header__menu {
     width: 20%;
     float: right; }
+    @media only screen and (max-width: 500px) {
+      .header__menu {
+        width: 40%; } }
     .header__menu__list {
       list-style: none;
       display: flex;
@@ -725,6 +731,69 @@ html {
       color: #ff207E; }
     .header__menu__link:hover {
       color: #ff207E; }
+
+@media only screen and (max-width: 900px) {
+  .reversed-col {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 900px) {
+  .long-col {
+    height: 100rem; } }
+
+.centered {
+  text-align: center !important; }
+
+@media only screen and (max-width: 900px) {
+  .media {
+    display: none !important; } }
+
+.general {
+  padding: 5rem 20rem;
+  text-align: center;
+  height: 70rem; }
+  @media only screen and (max-width: 1024px) {
+    .general {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 900px) {
+    .general {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .general {
+      padding: 0 3rem; } }
+  .general h2 {
+    color: #ff207E;
+    margin: 4rem auto;
+    font-size: 4.5rem; }
+  .general h4 {
+    color: #575757;
+    font-size: 3.5rem;
+    margin: 2rem auto; }
+  .general h6 {
+    font-size: 2.5rem;
+    margin: 2rem auto; }
+  .general-desc {
+    font-size: 1.9rem;
+    margin: 8rem auto;
+    line-height: 27px;
+    text-align: left; }
+  .general-col-dark {
+    background-color: #aaaaaa;
+    padding: 7rem;
+    text-align: left;
+    height: 30rem; }
+    @media only screen and (max-width: 1024px) {
+      .general-col-dark {
+        height: 40rem;
+        padding: 4rem; } }
+  .general-col-light {
+    background-color: #c4c4c4;
+    padding: 7rem;
+    text-align: left;
+    height: 30rem; }
+    @media only screen and (max-width: 1024px) {
+      .general-col-light {
+        padding: 4rem;
+        height: 40rem; } }
 
 *,
 *::after,

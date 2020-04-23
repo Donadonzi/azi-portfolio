@@ -11,7 +11,7 @@
   position: relative; }
   @media only screen and (max-width: 500px) {
     .overview {
-      height: 70rem;
+      height: 80rem;
       display: flex;
       flex-direction: column;
       align-items: center; } }
@@ -83,10 +83,16 @@
 .impact {
   width: 100%;
   padding: 7rem 20rem; }
+  @media only screen and (max-width: 1024px) {
+    .impact {
+      padding: 0 10rem; } }
   @media only screen and (max-width: 900px) {
     .impact {
       height: 120rem;
       padding: 2rem 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .impact {
+      height: 140rem; } }
   @media only screen and (max-width: 900px) {
     .impact .general-desc {
       width: 100%; } }
@@ -101,15 +107,16 @@
   padding: 7rem 20rem; }
   @media only screen and (max-width: 1024px) {
     .research {
-      height: 120rem;
-      padding: 7rem 10rem; } }
+      height: 150rem;
+      padding: 5rem 10rem; } }
   @media only screen and (max-width: 900px) {
     .research {
-      height: 140rem;
-      padding: 5rem 5rem; } }
+      height: 110rem;
+      padding: 3rem 5rem; } }
   .research .row {
     width: 100%;
-    padding: 4rem 0; }
+    padding: 4rem 0;
+    margin-bottom: 3rem !important; }
     @media only screen and (max-width: 900px) {
       .research .row {
         display: flex;
@@ -123,7 +130,8 @@
       .research-col {
         height: 25rem;
         padding: 3rem 3rem;
-        margin: 3rem 6rem; } }
+        margin: 3rem 3rem;
+        width: 20% !important; } }
 
 .target {
   width: 100%;
@@ -181,13 +189,18 @@
   margin-bottom: 8rem;
   margin-top: 8rem !important;
   padding: 0 20rem; }
+  @media only screen and (max-width: 1024px) {
+    .process {
+      height: 100rem;
+      padding: 5rem 10rem; } }
   @media only screen and (max-width: 900px) {
     .process {
-      padding: 4rem 10rem;
+      padding: 3rem 7rem;
       height: 160rem; } }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     .process {
-      padding: 2rem 5rem; } }
+      padding: 2rem 5rem;
+      margin-bottom: 0; } }
   .process img {
     display: block;
     width: 80%;
@@ -234,19 +247,29 @@
       font-size: 1.2rem; }
 
 .engage {
-  height: 75rem;
+  height: 110rem;
   margin-bottom: 8rem;
   width: 100%;
   padding: 7rem 20rem;
   position: relative; }
+  @media only screen and (max-width: 1024px) {
+    .engage {
+      padding: 5rem 10rem; } }
+  @media only screen and (max-width: 1000px) {
+    .engage {
+      padding: 3rem 7rem;
+      height: 80rem; } }
   @media only screen and (max-width: 768px) {
     .engage {
-      height: 60rem;
+      height: 70rem;
       padding: 2rem 5rem; } }
+  @media only screen and (max-width: 500px) {
+    .engage {
+      height: 50rem; } }
   .engage h5 {
     color: #ff207E;
     font-size: 3rem;
-    margin-bottom: 6rem; }
+    margin-bottom: 8rem; }
   .engage__image {
     width: 80%; }
     .engage__image img {
@@ -662,7 +685,7 @@ html {
         .footer__email__link {
           font-size: 1.4rem; } }
   .footer__social {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-between; }
     .footer__social__icon {

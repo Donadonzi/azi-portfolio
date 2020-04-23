@@ -15,7 +15,7 @@
 	position: relative;
 
 		@media only screen and (max-width: 500px) {
-			height: 70rem;
+			height: 80rem;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -114,12 +114,21 @@
 }
 
 .impact {
+	
 	width: 100%;
 	padding: 7rem 20rem;
+
+	@media only screen and (max-width: 1024px) {
+			padding: 0 10rem;	
+		}
 
 	@media only screen and (max-width: 900px) {
 		height: 120rem;
 		padding: 2rem 5rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		height: 140rem;
 	}
 
 	& .general-desc {
@@ -141,21 +150,22 @@
 	height: 110rem;
 	padding: 7rem 20rem;
 	
+	
 
 	@media only screen and (max-width: 1024px) {
-		height: 120rem;
-		padding: 7rem 10rem;
+		height: 150rem;
+		padding: 5rem 10rem;
 	}
 
 	@media only screen and (max-width: 900px) {
-		height: 140rem;
-		padding: 5rem 5rem;
+		height: 110rem;
+		padding: 3rem 5rem;
 	}
 
 	& .row {
 		width: 100%;
-
 		padding: 4rem 0;
+		margin-bottom: 3rem !important;
 
 		@media only screen and (max-width: 900px) {
 			// height: 50rem;
@@ -173,7 +183,8 @@
 		@media only screen and (max-width: 1024px) {
 			height: 25rem;
 			padding: 3rem 3rem;
-			margin: 3rem 6rem;
+			margin: 3rem 3rem;
+			width: 20% !important;
 		}
 
 		@media only screen and (max-width: 900px) {
@@ -183,6 +194,7 @@
 }
 
 .target {
+	
 	width: 100%;
 	height: 80rem;
 	padding: 7rem 20rem;
@@ -260,13 +272,18 @@
 	margin-top: 8rem !important;
 	padding: 0 20rem;
 
+	@media only screen and (max-width: 1024px) {
+		height: 100rem;
+		padding: 5rem 10rem;
+	}
 	@media only screen and (max-width: 900px) {
-		padding: 4rem 10rem;
+		padding: 3rem 7rem;
 		height: 160rem;
 	}
 
-	@media only screen and (max-width: 700px) {
+	@media only screen and (max-width: 768px) {
 		padding: 2rem 5rem;
+		margin-bottom: 0;
 	}
 
 	& img {
@@ -335,21 +352,36 @@
 
 .engage {
 	
-	height: 75rem;
+	height: 110rem;
 	margin-bottom: 8rem;
 	width: 100%;
 	padding: 7rem 20rem;
 	position: relative;
 
+	@media only screen and (max-width: 1024px) {
+		padding: 5rem 10rem;
+	}
+	@media only screen and (max-width: 1000px) {
+		padding: 3rem 7rem;
+		height: 80rem;
+	
+	}
+
 	@media only screen and (max-width: 768px) {
-		height: 60rem;
+		height: 70rem;
 		padding: 2rem 5rem;
 	}
+
+		@media only screen and (max-width: 500px) {
+			height: 50rem;
+		}
+
+
 
 	& h5 {
 		color: $color-pink-1;
 		font-size: 3rem;
-		margin-bottom: 6rem;
+		margin-bottom: 8rem;
 	}
 	&__image {
 		width: 80%;

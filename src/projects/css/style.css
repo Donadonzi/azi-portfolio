@@ -877,7 +877,8 @@ body {
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto; }
 
 .main__container {
   position: relative;

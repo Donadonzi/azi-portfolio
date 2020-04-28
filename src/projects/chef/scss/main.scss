@@ -1,0 +1,67 @@
+@import './variables';
+@import './utilities';
+
+@import './layout/header';
+@import './layout/footer';
+@import './layout/container';
+
+
+@import './components/conclusion';
+@import './components/design';
+@import './components/final';
+@import './components/hero';
+@import './components/overview';
+@import './components/persona';
+@import './components/research';
+@import './components/target';
+@import './components/usability';
+@import './components/carousel';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+		box-sizing: border-box;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+
+	// @media only screen and (max-width: 1200px) {
+	// 	font-size: 56.25%;
+	// }
+
+	// @media only screen and (max-width: 1000px) {
+	// 	font-size: 50%;
+	// }
+
+	// @media only screen and (max-width: 500px) {
+	// 	font-size: 45%;
+	// }
+}
+
+body {
+	width: 1440px;
+	font-size: 1.6rem;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	background-color: yellow;
+	
+}
+
+
+
+
+
+
+
+
+
+

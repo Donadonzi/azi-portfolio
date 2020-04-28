@@ -1,0 +1,52 @@
+.footer {
+  background-color: $color-pink-2;
+	height: 15rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(5rem, 20rem) 1fr minmax(5rem, 20rem);
+	grid-template-rows: 1fr;
+	align-items: center;
+
+	&__email {
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+		justify-self: start;
+
+		&__link {
+			text-decoration: none;
+			color: #181818;
+			font-size: 2rem;
+			font-style: normal;
+
+			@media only screen and (max-width: 768px) {
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	&__social {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		justify-self: end;
+		width: 20%;
+		display: flex;
+		justify-content: space-between;
+
+
+		&__icon {
+			display: block;
+			width: 2rem;
+			height: 2rem;
+			color:$color-grey-2;
+
+			@media only screen and (max-width: 768px) {
+				transform: scale(.8);
+			}
+		}
+
+		&__link {
+			color:$color-grey-2;
+		}
+	}
+
+}

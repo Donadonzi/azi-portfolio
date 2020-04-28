@@ -1,0 +1,68 @@
+.overview {
+	grid-column: 2 / 3;
+	height: 80rem;
+	padding-top: $m-desktop;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(70px, 1fr));
+	column-gap: 2rem;
+	grid-template-rows: 60% 40%;
+
+	&__text {
+		font-size: 1.8rem;
+		
+	}
+
+		
+
+
+	&--top {	
+		grid-column: 3 / 11;
+		grid-row: 1 / 2;
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	
+	&--bottom {
+		grid-column: 1 / -1;
+		grid-row: 2 / 3;
+		display: flex;
+		justify-content: space-between;
+
+		&__text {
+			display: block;
+			margin: 0 2rem;
+		}
+
+		&__title {
+			margin-bottom: $xs-desktop;
+		}
+
+		&--problem {
+			width: 47%;
+			background-color: $color-grey-6;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 1;
+			padding: 0 8rem;
+			
+		}
+
+		&--solution {
+			width: 47%;
+			background-color: $color-grey-5;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 1;
+			padding: 0 8rem;
+		
+
+		}
+	}
+}

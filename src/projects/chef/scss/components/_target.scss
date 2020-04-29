@@ -1,10 +1,6 @@
 .target {
-	grid-column: 2 / 3;
+	@include PatternCompo12Col;
 	height: 80rem;
-	padding-top: $m-desktop;
-	display: grid;
-	grid-template-columns: repeat(12, minmax(70px, 1fr));
-	column-gap: 2rem;
 	grid-template-rows: 40% 60%;
 
 	&__text {

@@ -1,13 +1,9 @@
 .persona {
-	
-	grid-column: 2 / 3;
+	@include PatternCompo12Col;
 	height: 70rem;
-	padding-top: $l-desktop;
-	display: grid;
-	grid-template-columns: repeat(12, minmax(70px, 1fr));
-	column-gap: 2rem;
+	// padding-top: $l-desktop;
 	grid-template-rows: 30% 70%;
-	justify-items: center;
+	
 	
 
 	&--top {

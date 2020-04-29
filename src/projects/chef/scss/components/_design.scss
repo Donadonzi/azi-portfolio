@@ -1,12 +1,8 @@
-.design {	
-	grid-column: 2 / 3;
+.design {
+	@include PatternCompo12Col;
 	height: 180rem;
-	padding-top: $m-desktop;
-	display: grid;
-	grid-template-columns: repeat(12, minmax(70px, 1fr));
-	column-gap: 2rem;
 	grid-template-rows: max-content 1.5fr 2fr;
-	justify-items: center;
+	
 
 	& h2 {
 		font-weight: bold;

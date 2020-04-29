@@ -1,29 +1,28 @@
 .wireframes {	
-	grid-column: 2 / 3;
+	@include PatternCompo12Col;
 	height: 80rem;
-	padding-top: $m-desktop;
-	display: grid;
-	grid-template-columns: repeat(12, minmax(70px, 1fr));
-	column-gap: 2rem;
-	grid-template-rows: min-content min-content 1fr;
+	grid-template-rows: 30% 70%;
 	justify-items: center;
-	background-color: lawngreen;
+	margin-bottom: $l-desktop;
+	
 
-	&__title {
+	&--top {
 		grid-row: 1 / 2;
 		grid-column: 1 / -1;
+		width: 50%;
+		text-align: center;
+		margin-bottom: $m-desktop;
+		
 	}
 
-	&__text {
-		width: 40%;
-		background-color: pink;
+	&--bottom {
 		grid-row: 2 / 3;
+		grid-column: 1 / -1;
+		width: 100%;
 	}
 
 	&__gallery {
-		grid-row: 3 / 4;
-		background-color: royalblue;
-		width: 100%;
+		width: 70%;
 		height: 100%;
 	}
 

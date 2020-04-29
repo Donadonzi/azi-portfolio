@@ -1,0 +1,43 @@
+.final {
+		@include PatternCompo12Col;
+		height: 75rem;
+		grid-template-rows: 35% 65%;
+		
+		
+
+		&__subtitle {
+			font-weight: bold;
+			font-size: 2rem;
+		}
+
+		&--top {
+			grid-column: 1 / -1;
+			grid-row: 1 / 2;
+			text-align: center;
+			
+		}
+
+		&--bottom {
+			grid-column: 1 / -1;
+			grid-row: 2 / 3;
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			
+
+			&__col {
+				width: 47%;
+				padding: 3rem;
+				@include flexColumn;
+				justify-content: flex-start;
+
+				&__image {
+					background-color: yellowgreen;
+					width: 50%;
+					height: 50%;
+					margin-bottom: $xs-desktop;
+				}
+				
+			}
+		}
+}

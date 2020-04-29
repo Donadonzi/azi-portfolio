@@ -8,12 +8,8 @@
 	grid-template-rows: 60% 40%;
 
 	&__text {
-		font-size: 1.8rem;
-		
+		font-size: 1.8rem;	
 	}
-
-		
-
 
 	&--top {	
 		grid-column: 3 / 11;
@@ -22,7 +18,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
 	}
 	
 	&--bottom {
@@ -48,8 +43,7 @@
 			align-items: center;
 			justify-content: center;
 			flex-shrink: 1;
-			padding: 0 8rem;
-			
+			padding: 0 8rem;	
 		}
 
 		&--solution {
@@ -61,8 +55,6 @@
 			justify-content: center;
 			flex-shrink: 1;
 			padding: 0 8rem;
-		
-
 		}
 	}
 }

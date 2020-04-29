@@ -1,0 +1,68 @@
+.persona {
+	
+	grid-column: 2 / 3;
+	height: 70rem;
+	padding-top: $l-desktop;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(70px, 1fr));
+	column-gap: 2rem;
+	grid-template-rows: 30% 70%;
+	justify-items: center;
+	
+
+	&--top {
+		
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		
+	}
+
+	&--bottom {
+		
+		grid-column: 1 / -1;
+		grid-row: 2 / 3;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__image {
+			width: 47%;
+			height: 100%;
+			background-color: grey;
+		}
+
+		&__text {
+			width: 47%;
+			height: 100%;
+			
+
+			&__title {
+				font-weight: bold;
+				font-size: 2.4rem;
+				margin-bottom: $s-desktop;
+			}
+
+			&__cols {
+				
+				& h4 {
+					font-weight: bold;
+					font-size: 1.8rem;
+					margin-bottom: $xs-desktop;
+				}
+				display: flex;
+				justify-content: space-between;
+
+				&--needs {
+					
+					width: 45%;
+				}
+
+				&--goals {
+					
+					width: 45%;
+				}
+			}
+		}
+	}
+}

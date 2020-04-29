@@ -1,10 +1,10 @@
 @import './variables';
 @import './utilities';
+@import './mixins';
 
 @import './layout/header';
 @import './layout/footer';
 @import './layout/container';
-
 
 @import './components/conclusion';
 @import './components/design';
@@ -16,6 +16,7 @@
 @import './components/target';
 @import './components/usability';
 @import './components/carousel';
+@import './components/wireframes';
 
 *,
 *::after,
@@ -29,9 +30,7 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
 	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flexColumn;
 
 	// @media only screen and (max-width: 1200px) {
 	// 	font-size: 56.25%;
@@ -51,8 +50,7 @@ body {
 	font-size: 1.6rem;
 	margin: 0;
 	line-height: 3rem;
-	
-	
+
 }
 
 

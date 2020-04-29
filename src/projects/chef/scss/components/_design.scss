@@ -1,0 +1,62 @@
+.design {	
+	grid-column: 2 / 3;
+	height: 180rem;
+	padding-top: $m-desktop;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(70px, 1fr));
+	column-gap: 2rem;
+	grid-template-rows: max-content 1.5fr 2fr;
+	justify-items: center;
+
+	& h2 {
+		font-weight: bold;
+		font-size: 2rem;
+		margin-bottom: $xs-desktop;
+	}
+
+	&__title {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+	}
+
+	&__logic {	
+		grid-column: 1 / -1;
+		grid-row: 2 / 3;
+		width: 100%;
+		height: 100%;
+		@include flexColumn;
+
+		&__title {
+		margin-top: $m-desktop;
+	  }
+
+		&__image {
+			width: 100%;
+			height: 100%;
+			background-color: greenyellow;
+		}
+
+		&__subtitle {
+			margin-bottom: $xs-desktop;
+			// width: 70%;
+		}
+	}
+
+	&__sketch {
+		grid-column: 1 / -1;
+		grid-row: 3 / 4;
+		width: 100%;
+		height: 100%;
+		@include flexColumn;
+
+		&__title {
+		margin-top: $l-desktop;
+	  }
+
+		&__subtitle {
+			margin-bottom: $xs-desktop;
+			width: 70%;
+		}
+
+	}
+}

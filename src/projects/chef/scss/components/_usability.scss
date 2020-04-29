@@ -1,7 +1,11 @@
 .usability {
-	@include PatternCompo12Col;
+	@include componentColPattern;
 	height: 60rem;
 	grid-template-rows: 40% 60%;
+
+	@media screen and (max-width:768px) {
+			height: 120rem;
+	}
 
 	&__text {
 		font-size: 1.8rem;	
@@ -22,6 +26,11 @@
 		display: flex;
 		justify-content: space-between;
 
+		@media screen and (max-width:768px) {
+			flex-direction: column;
+			align-items: center;
+		}
+
 		&__text {
 			display: block;
 			margin: 0 2rem;
@@ -40,6 +49,11 @@
 			justify-content: center;
 			flex-shrink: 1;
 			padding: 0 8rem;	
+
+			@media screen and (max-width:768px) {
+				margin-bottom: $m-mobile;
+				height: 350px;
+			}
 		}
 
 		&--discover {
@@ -51,6 +65,11 @@
 			justify-content: center;
 			flex-shrink: 1;
 			padding: 0 8rem;
+
+			@media screen and (max-width:768px) {
+				margin-bottom: $m-mobile;
+				height: 350px;
+			}
 		}
 	}
 }

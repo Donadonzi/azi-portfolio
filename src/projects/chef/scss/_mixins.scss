@@ -4,11 +4,33 @@
 	align-items: center;
 }
 
-@mixin PatternCompo12Col {
+@mixin componentColPattern {
 	grid-column: 2 / 3;
 	display: grid;
 	grid-template-columns: repeat(12, minmax(70px, 1fr));
 	column-gap: 2rem;
 	justify-items: center;
 	margin-top: $m-desktop;
+
+	@media screen and (max-width: 768px) {
+	// 	grid-template-columns: repeat(6, minmax(55px, 1fr));
+	// 	column-gap: 5px;
+	// 	margin-top: $m-mobile;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		width: 100%;
+
+	}
+}
+
+@mixin layoutColPattern {
+	display: grid;
+	grid-template-columns: minmax(5rem, 20rem) 1fr minmax(5rem, 20rem);
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 30px 1fr 30px;
+	}
+
 }

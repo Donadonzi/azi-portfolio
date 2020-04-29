@@ -9,18 +9,24 @@
 	font-weight: bold;
 	font-size: 1.4rem;
 	z-index: 10;
-	display: grid;
-	grid-template-columns: minmax(5rem, 20rem) 1fr minmax(5rem, 20rem);
+
+	@include layoutColPattern;
 	grid-template-rows: 1fr;
 	align-items: center;
 	
 
 	&__logo {
 		height: 40px;
-		width: 68px;
+		width: 70px;
 		grid-row: 1 / 2;
 		grid-column: 2 / 3;
 		justify-self: start;
+
+		@media screen and (max-width: 768px) {
+			height: 20px;
+			width: 30px;
+		}
+
 	
 
 		& img {

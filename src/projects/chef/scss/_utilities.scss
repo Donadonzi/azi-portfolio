@@ -1,17 +1,16 @@
 	
 .compo__header {
 	font-weight: bold;
-	font-size: 3rem;
+	font-size: 2.8rem ;
 	color: $color-pink-1 !important;
-	margin-bottom: $m-desktop !important;
+	margin-bottom: $m-desktop;
 	margin-top: $m-desktop;
 	
 }
 
-div[class*="title"],
-h2[class*="title"]{
+div[class*="title"] {
 	color: $color-grey-1;
 	font-weight: bold;
-	margin-bottom: $xs-desktop;
+	margin-bottom: $s-desktop;
 	
 }

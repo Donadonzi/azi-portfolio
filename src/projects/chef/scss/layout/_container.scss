@@ -1,8 +1,5 @@
 .main__container {
-	display: grid;
-	grid-template-columns: minmax(5rem, 20rem) 1fr minmax(5rem, 20rem);
-	// grid-template-rows: 1fr;
-	
+	@include layoutColPattern;	
 	min-height: 100vh;
 	
 

@@ -1,18 +1,25 @@
 .hero {
-	
-	height: 100vh;
+	height: 80rem;
 	width: 100%;
 	grid-column: 1 / -1;
 	display: grid;
 	grid-template-rows: 80% 20%;
-	grid-template-columns: minmax(5rem, 20rem) repeat(12, minmax(70px, 1fr)) minmax(5rem, 20rem);
+	grid-template-columns: minmax(5rem, 20rem) repeat(12, minmax(auto, 70px)) minmax(5rem, 20rem);
 	column-gap: 2rem;
 	align-items: center;
 	align-content: center;
-	// position: relative;
+
+	@media screen and (max-width: 768px) {
+		@include flexColumn;
+		height: 120rem;
+		
+	}
+	
+	& h1 {
+		color: black;
+	}
 
 	&__text {	
-		height: 100%;
 		padding: 8rem 0;
 		grid-column: 2 / span 4;
 		
@@ -44,14 +51,18 @@
 		&__para {
 			font-size: 1.4rem;
 			width: 100%;
+
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
 		}
 	}
 	
 
 	&__image {
-		// width: 100%;
+		width: 100%;
 		height: 100%;
-		background-color: purple;
+		background-color: #855f85;
 		grid-column: 7 / -2;
 	}
 
@@ -64,17 +75,31 @@
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
 		display: grid;
-		grid-template-columns: minmax(5rem, 20rem) repeat(12, minmax(1fr, 70px)) minmax(5rem, 20rem);
+		grid-template-columns: minmax(5rem, 20rem) repeat(12, minmax(auto, 70px)) minmax(5rem, 20rem);
 		column-gap: 2rem;
 		align-items: center;
+
+		@media screen and (max-width: 768px) {
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding: 30px;
+		}
 
 
 		&__item {
 			
+			@media screen and (max-width: 768px) {
+				display: flex;
+				width: 30%;					
+		  }
+			
 
 			&--title {
-				font-weight: bold;
 				margin-bottom: $xs-desktop;
+				color: black !important;
+				margin-right: 20px;
 			}
 
 			&-1 {

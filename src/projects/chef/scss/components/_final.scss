@@ -1,8 +1,12 @@
 .final {
-		@include PatternCompo12Col;
+		@include componentColPattern;
 		height: 75rem;
 		grid-template-rows: 35% 65%;
+
 		
+		@media screen and (max-width:768px) {
+			height: 120rem;
+		}
 		
 
 		&__subtitle {
@@ -23,6 +27,12 @@
 			width: 80%;
 			display: flex;
 			justify-content: space-between;
+
+			@media screen and (max-width:768px) {
+				flex-direction: column;
+				align-content: center;
+				justify-content: center;
+			}
 			
 
 			&__col {
@@ -31,11 +41,24 @@
 				@include flexColumn;
 				justify-content: flex-start;
 
+				@media screen and (max-width:768px) {
+					width: auto;
+				}
+
 				&__image {
 					background-color: yellowgreen;
 					width: 50%;
 					height: 50%;
 					margin-bottom: $xs-desktop;
+
+					@media screen and (max-width:768px) {
+						width: 200px;
+						height: 200px;
+					}
+				}
+
+				&__text {
+					width: 70%;
 				}
 				
 			}

@@ -1,16 +1,24 @@
 .research {
-	@include PatternCompo12Col;
-	height: 80rem;
-	grid-template-rows: 30% 40% 30%;
+	@include componentColPattern;
+	height: 90rem;
+	grid-template-rows: 30% 40% 20%;
+
+	@media screen and (max-width: 768px) {
+		height: 140rem;
+	}
 
 	&--top {
-		
 		grid-column: 3 / 11;
 		grid-row: 1 / 2;
-		align-self: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flexColumn;
+
+		@media screen and (max-width: 768px) {
+			grid-column: 1 / -1;
+		}
+	}
+
+	&__text {
+		margin-bottom: $m-desktop;
 	}
 
 	&--middle {
@@ -20,33 +28,47 @@
 		display: flex;
 		justify-content: space-between;
 
+			@media screen and (max-width: 768px) {
+			 flex-direction: column;
+			 justify-content: center;
+			 align-content: center;
+			}
+
 		&__col {
 			background-color: $color-grey-5;
 			width: 30%;
 			height: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			@include flexColumn;
 			justify-content: center;
 			padding: 0 4rem;
+
+			@media screen and (max-width: 768px) {
+				
+				margin-bottom: $m-mobile;
+				padding: 30px;
+				margin: 20px auto;
+			}
 
 			&__title {
 				font-size: 2rem;
 				font-weight: bold;
 				margin-bottom: $xs-desktop;
-				color: $color-pink-2;
+				color: $color-pink-2 !important;
 			}
 		}
 	}
 
 	&--bottom {
-		
+		margin-top: $m-desktop;
 		grid-column: 3 / 11;
 		grid-row: 3 / 4;
-		align-self: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flexColumn;
+
+		@media screen and (max-width: 768px) {
+			 display: none;
+		}
+
+
 
 		&__title {
 			font-size: 2rem;

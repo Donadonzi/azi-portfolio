@@ -19,7 +19,6 @@
 @import './components/wireframes';
 @import './components/keypages';
 
-
 *,
 *::after,
 *::before {
@@ -48,8 +47,6 @@ body {
 	font-size: 1.6rem;
 	margin: 0;
 	line-height: 3rem;
-	// position: relative;
-
 }
 
 h4 {
@@ -61,14 +58,3 @@ h2 {
 	font-size: 3rem;
 	margin-bottom: $s-desktop;
 }
-
-
-
-
-
-
-
-
-
-
-

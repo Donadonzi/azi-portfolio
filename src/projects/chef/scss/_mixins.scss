@@ -13,9 +13,6 @@
 	margin-top: $m-desktop;
 
 	@media screen and (max-width: 768px) {
-	// 	grid-template-columns: repeat(6, minmax(55px, 1fr));
-	// 	column-gap: 5px;
-	// 	margin-top: $m-mobile;
 		display: flex;
 		flex-direction: column;
 		align-content: center;

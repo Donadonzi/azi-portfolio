@@ -1,6 +1,6 @@
 .wireframes {	
 	@include componentColPattern;
-	height: 80rem;
+	height: 100rem;
 	grid-template-rows: 30% 70%;
 	justify-items: center;
 	margin-bottom: $l-desktop;
@@ -35,6 +35,11 @@
 	&__gallery {
 		width: 70%;
 		height: 100%;
+
+		@media screen and (max-width: 768px) {
+		width: 50%;
+		height: auto;
+	  }
 	}
 
 }

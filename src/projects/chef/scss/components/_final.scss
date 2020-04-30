@@ -46,19 +46,23 @@
 				}
 
 				&__image {
-					background-color: yellowgreen;
+					
 					width: 50%;
 					height: 50%;
 					margin-bottom: $xs-desktop;
 
 					@media screen and (max-width:768px) {
-						width: 200px;
-						height: 200px;
+						width: 150px;
+						height: auto;
 					}
 				}
 
 				&__text {
 					width: 70%;
+
+					@media screen and (max-width:768px) {
+						width: 40%;
+					}
 				}
 				
 			}

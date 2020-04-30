@@ -20,7 +20,7 @@
 		align-items: center;
 
 		@media screen and (max-width: 768px) {
-			width: 70%;
+			// width: 70%;
 			margin-bottom: $m-mobile;
 			
 		}
@@ -37,13 +37,13 @@
 		@media screen and (max-width: 768px) {
 			flex-direction: column;
 			justify-content: flex-start;
-			width: 80%;
+			// width: 80%;
 		}
 
 		&__text {
 			display: block;
 			margin: 0 2rem;
-			width: 60%;
+			// width: 60%;
 		}
 
 		&__title {

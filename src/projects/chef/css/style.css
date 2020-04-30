@@ -147,8 +147,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   .design__title {
     grid-column: 1 / -1;
     grid-row: 1 / 2; }
@@ -207,8 +206,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 768px) {
     .final {
       height: 120rem; } }
@@ -256,7 +254,6 @@ div[class*="title"] {
 
 .hero {
   height: 80rem;
-  width: 100%;
   grid-column: 1 / -1;
   display: grid;
   grid-template-rows: 80% 20%;
@@ -307,7 +304,6 @@ div[class*="title"] {
         height: auto; } }
   .hero__brief {
     width: 100%;
-    height: 100%;
     padding: 5rem 0;
     background-color: #dedede;
     grid-column: 1 / -1;
@@ -352,8 +348,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 768px) {
     .overview {
       height: 120rem; } }
@@ -368,7 +363,6 @@ div[class*="title"] {
     align-items: center; }
     @media screen and (max-width: 768px) {
       .overview--top {
-        width: 70%;
         margin-bottom: 40px; } }
   .overview--bottom {
     grid-column: 1 / -1;
@@ -379,12 +373,10 @@ div[class*="title"] {
     @media screen and (max-width: 768px) {
       .overview--bottom {
         flex-direction: column;
-        justify-content: flex-start;
-        width: 80%; } }
+        justify-content: flex-start; } }
     .overview--bottom__text {
       display: block;
-      margin: 0 2rem;
-      width: 60%; }
+      margin: 0 2rem; }
     .overview--bottom__title {
       margin-bottom: 15px; }
     .overview--bottom--problem {
@@ -429,8 +421,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 786px) {
     .persona {
       height: 90rem; } }
@@ -499,8 +490,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 768px) {
     .research {
       height: 140rem; } }
@@ -573,8 +563,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 768px) {
     .target {
       height: 130rem; } }
@@ -646,8 +635,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 768px) {
     .usability {
       height: 120rem; } }
@@ -752,8 +740,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   @media screen and (max-width: 768px) {
     .wireframes {
       height: 120rem; } }
@@ -793,8 +780,7 @@ div[class*="title"] {
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
-      width: 100%; } }
+      align-items: center; } }
   .keypages__title {
     grid-column: 1 / -1; }
   .keypages__item {

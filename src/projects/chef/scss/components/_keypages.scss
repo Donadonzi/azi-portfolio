@@ -26,6 +26,9 @@
 		&__text {
 			width: 80%;
 			margin-bottom: 5rem;	
+				@media screen and (max-width:768px) {
+				width: 40%;
+			}
 		}
 
 		&__image {

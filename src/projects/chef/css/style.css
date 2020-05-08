@@ -131,7 +131,7 @@ div[class*="title"] {
     width: 70%; }
     @media screen and (max-width: 768px) {
       .conclusion__text {
-        width: 40%; } }
+        width: 40% !important; } }
 
 .design {
   grid-column: 2 / 3;
